@@ -1,4 +1,4 @@
-# ♻️ RecycleMate
+# RecycleMate
 
 **Social Marketplace for Upcycled Goods**
 
@@ -6,7 +6,7 @@ RecycleMate adalah platform digital yang menghubungkan kolektor sampah anorganik
 
 ---
 
-## 📱 Tampilan Aplikasi
+## Tampilan Aplikasi
 
 | Splash Screen | Home Screen | Product Detail | Upload/Donasi |
 |:---:|:---:|:---:|:---:|
@@ -14,7 +14,7 @@ RecycleMate adalah platform digital yang menghubungkan kolektor sampah anorganik
 
 ---
 
-## 🎯 Fitur Utama
+## Fitur Utama
 
 - **Splash / Onboarding Screen** — Perkenalan visi dan misi RecycleMate
 - **Home Screen** — Grid produk upcycle dengan filter kategori & pencarian real-time
@@ -22,18 +22,18 @@ RecycleMate adalah platform digital yang menghubungkan kolektor sampah anorganik
 - **Upload / Donasi Screen** — Form donasi barang bekas dengan counter jumlah
 
 ### Fitur Interaktif
-- ❤️ Toggle **Favorite** produk (merah/outline)
-- 🛒 **Keranjang belanja** dengan badge counter
-- 🔔 **Notifikasi** popup
-- 🔍 **Pencarian** produk real-time
-- 🏷️ **Filter kategori** — Semua, Plastik, Kayu, Kaca, Kain
-- 📦 **Quantity selector** di detail produk & form donasi
-- 📲 **Hubungi Pengrajin** via WhatsApp / Instagram (bottom sheet)
-- ✅ **Success state** setelah submit donasi
+- Toggle **Favorite** produk (merah/outline)
+- **Keranjang belanja** dengan badge counter
+- **Notifikasi** popup
+- **Pencarian** produk real-time
+- **Filter kategori** — Semua, Plastik, Kayu, Kaca, Kain
+- **Quantity selector** di detail produk & form donasi
+- **Hubungi Pengrajin** via WhatsApp / Instagram (bottom sheet)
+- **Success state** setelah submit donasi
 
 ---
 
-## 🏗️ Struktur Proyek
+## Struktur Proyek
 
 ```
 recyclemate/
@@ -58,7 +58,7 @@ recyclemate/
 
 ---
 
-## ✅ Pemenuhan Kriteria Teknis
+## Pemenuhan Kriteria Teknis
 
 ### Widget Requirements
 
@@ -98,13 +98,13 @@ MaterialApp
     ├── SplashScreen (Stateless)
     │   └── CustomButton → /home
     ├── HomeScreen (Stateful)
-    │   ├── AppBar → Bell (notif dialog), Cart (cart dialog)
+  │   ├── AppBar → Notifikasi (dialog), Keranjang (dialog)
     │   ├── TextField (search)
     │   ├── Row → CategoryChip × 5 (filter aktif)
     │   ├── SectionTitle
-    │   └── SliverGrid → ProductCard (Stack: ilustrasi + ❤️)
+  │   └── SliverGrid → ProductCard (Stack: ilustrasi + ikon favorite)
     ├── ProductDetailScreen (Stateful)
-    │   ├── SliverAppBar → Stack (ilustrasi + ❤️ + CategoryChip)
+  │   ├── SliverAppBar → Stack (ilustrasi + ikon favorite + CategoryChip)
     │   ├── Row (rating + harga)
     │   ├── SectionTitle × 3
     │   ├── CustomButton "Beli Sekarang" → dialog
@@ -118,7 +118,7 @@ MaterialApp
 
 ---
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 
 ### Prasyarat
 
@@ -156,7 +156,7 @@ flutter run -d emulator-5554 --android-skip-build-dependency-validation
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Teknologi | Versi |
 |-----------|-------|
@@ -169,24 +169,24 @@ flutter run -d emulator-5554 --android-skip-build-dependency-validation
 
 ---
 
-## 🎨 Ilustrasi Produk
+## Ilustrasi Produk
 
 Setiap jenis produk memiliki ilustrasi unik yang digambar menggunakan `CustomPainter` — tanpa asset gambar eksternal:
 
 | Produk | Ilustrasi |
 |--------|-----------|
-| 🍾 Lampu Botol Kaca | Botol dengan efek glow LED |
-| 🌸 Vas Botol Kaca | Vas dengan bunga di atas |
-| 🪴 Pot Kayu Palet | Pot kayu dengan tanaman |
-| 🪑 Kursi Kayu Palet | Kursi dengan serat kayu |
-| 👜 Tas Plastik Anyam | Tas dengan motif anyaman |
-| 🛋️ Bantal Kain Perca | Bantal patchwork warna-warni |
-| 📚 Rak Pipa PVC | Rak dengan buku mini |
-| 🪞 Cermin Kayu Drift | Cermin dengan bingkai driftwood |
+| Lampu Botol Kaca | Botol dengan efek glow LED |
+| Vas Botol Kaca | Vas dengan bunga di atas |
+| Pot Kayu Palet | Pot kayu dengan tanaman |
+| Kursi Kayu Palet | Kursi dengan serat kayu |
+| Tas Plastik Anyam | Tas dengan motif anyaman |
+| Bantal Kain Perca | Bantal patchwork warna-warni |
+| Rak Pipa PVC | Rak dengan buku mini |
+| Cermin Kayu Drift | Cermin dengan bingkai driftwood |
 
 ---
 
-## 👥 Tim Pengembang
+## Tim Pengembang
 
 | Role | Tugas |
 |------|-------|
@@ -196,7 +196,7 @@ Setiap jenis produk memiliki ilustrasi unik yang digambar menggunakan `CustomPai
 
 ---
 
-## 📄 Lisensi
+## Lisensi
 
 Project ini dibuat untuk keperluan akademik (UTS Mobile Programming).
 
